@@ -20,6 +20,9 @@
     background-image: url("../media/img/section-uno/bg-section1.jpg");
     @include grid-container-center;
 }
+#section-uno:before{
+@include section-uno-before;
+}
 #section-dos{
     background-color: #abc;
     background-image: url("../media/img/section-dos/bg-section2.jpg");

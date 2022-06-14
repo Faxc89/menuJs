@@ -18,8 +18,9 @@
 @mixin btn-menu{
     border: 0;
     padding: 3px;
-    background-color:#bcb6b398;
-
+    position: relative;
+    background-color:#bcb6b354;
+    
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
@@ -38,6 +39,8 @@
     justify-items: center;
     align-content: center ;
     align-items: center;
+
+
 }
 @mixin btn-pagina-item{
     display: relative;
@@ -51,12 +54,14 @@
 
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'Kanit', sans-serif;
     text-shadow: 1px 2px 5px #2b2626;
     border-radius: 5px;
     color: white;
     background-color: #504f4f53;
+    line-height: 2.5rem;
+
 }
 // HOVER PARA @MEDIAQUERY
 //     }&:hover{
@@ -66,4 +71,16 @@
 //         }
 // }
 
+
+
+@mixin section-uno-before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
