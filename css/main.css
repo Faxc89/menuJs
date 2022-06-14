@@ -13,7 +13,7 @@
 
 #section-uno {
   background-color: #abc;
-  background-image: url("../media/img/section-uno/bg-section1.jpg");
+  background-image: url("../media/img/section-tres/bg-section3.jpg");
   display: grid;
   justify-content: center;
   align-content: center; }
@@ -21,7 +21,7 @@
 #section-uno:before {
   content: '';
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   bottom: 0;
@@ -29,11 +29,44 @@
 
 #section-dos {
   background-color: #abc;
-  background-image: url("../media/img/section-dos/bg-section2.jpg"); }
+  background-image: url("../media/img/section-dos/bg-section2.jpg");
+  display: grid;
+  grid-column: 5vw 95vw;
+  grid-template-areas: "btn titulo" "btn cards" "btn cards"; }
+  #section-dos h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    grid-area: titulo;
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+  #section-dos .card-opciones-menu {
+    grid-area: cards;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-around;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+    text-align: center; }
+    #section-dos .card-opciones-menu .card {
+      border-top-left-radius: 5px;
+      background-color: rgba(54, 54, 48, 0.445); }
+    #section-dos .card-opciones-menu h2 {
+      font-size: 1.2em; }
+  #section-dos .btn-pagina {
+    grid-area: btn;
+    display: grid;
+    justify-content: start;
+    align-content: ceter;
+    justify-items: center;
+    align-items: center; }
 
 #section-tres {
   background-color: #abc;
-  background-image: url("../media/img/section-tres/bg-section3.jpg"); }
+  background-image: url("../media/img/section-uno/bg-section1.jpg"); }
 
 #section-cuatro {
   background-color: #222211;

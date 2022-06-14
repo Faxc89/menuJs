@@ -37,16 +37,7 @@
     "btn titulo"
     "btn cards"
     "btn cards";
-    h1{
-        color: white;
-        font-size: 1.8rem;
-        font-family: 'Kanit', sans-serif;
-
-        grid-area: titulo;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-    }
+}
     .card-opciones-menu{
         grid-area: cards;
         display: grid;
@@ -57,13 +48,10 @@
         font-size: 1.3rem;
         font-family: 'Kanit', sans-serif;
         text-align: center;
-        .card{
+    }
+    .card{
             border-top-left-radius: 5px;
             background-color: rgba(54, 54, 48, 0.445);
-        }
-        h2{
-            font-size: 1.2em;
-        }
     }
     .btn-pagina{
         grid-area: btn;
@@ -74,7 +62,6 @@
         align-items: center;
     }
 
-}
 
 
 #section-tres{
