@@ -1,5 +1,10 @@
 // Creo MIXIN 
 
+@mixin grid-container-center{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
 @mixin container{
     height: 100vh;
 }
@@ -9,20 +14,44 @@
     background-repeat: no-repeat;
 }
 
+
+@mixin btn-menu{
+    border: 0;
+    padding: 3px;
+    background-color:#bcb6b398;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 10px 10px 10px #52382c;
+    border-radius: 5px;
+}
+@mixin btn-menu-item{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+@mixin grid-btn-pagina{
+    display: grid;
+    justify-content: start;
+    justify-items: center;
+    align-content: center ;
+    align-items: center;
+}
 @mixin btn-pagina-item{
     display: relative;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 1rem;
     left: 0;
-    bottom:0;
+    bottom: 1rem;
 
     margin:2px ;
     padding:3px;
-    width:100px;
 
     font-weight: bold;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     font-family: 'Kanit', sans-serif;
     text-shadow: 1px 2px 5px #2b2626;
     border-radius: 5px;
@@ -37,14 +66,4 @@
 //         }
 // }
 
-@mixin grid-container-center{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
-@mixin grid-btn-pagina{
-    display: grid;
-    justify-content: start;
-    align-content: end;
-    text-align: center;
-}
+
