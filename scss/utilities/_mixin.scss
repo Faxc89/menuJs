@@ -1,0 +1,10 @@
+// Creo MIXIN 
+
+@mixin container{
+    height: 100vh;
+}
+@mixin bg-container{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,13 @@
+@import "./utilities/generales";
+@import "./utilities/mixin";
+@import "./utilities/variables";
+
+.container{
+    @include container;
+    @include bg-container;
+}
+
+#section-uno{
+    background-color: #abc;
+    background-image: url("../");
+}

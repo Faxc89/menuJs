@@ -1,0 +1,9 @@
+.container {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#section-uno {
+  background-color: #abc;
+  background-image: url("../"); }
