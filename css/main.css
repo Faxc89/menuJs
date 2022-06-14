@@ -1,9 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 .container {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex; }
 
 #section-uno {
   background-color: #abc;
-  background-image: url("../"); }
+  background-image: url("../media/img/section-uno/bg-section1.jpg"); }
+
+#section-dos {
+  background-color: #abc;
+  background-image: url("../media/img/section-dos/bg-section2.jpg"); }
+
+#section-tres {
+  background-color: #abc;
+  background-image: url("../media/img/section-tres/bg-section3.jpg"); }
+
+#section-cuatro {
+  background-color: #222211; }
+
+#section-cinco {
+  background-color: #aabbcc; }
+
+#section-seis {
+  background-color: #332; }
+
+.btn-pagina {
+  display: grid;
+  justify-content: start;
+  align-content: end;
+  text-align: center; }
+
+.btn-pagina-item {
+  display: relative;
+  top: 10px;
+  right: 10px;
+  left: 0;
+  bottom: 0;
+  margin: 2px;
+  padding: 3px;
+  width: 100px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: 'Kanit', sans-serif;
+  text-shadow: 1px 2px 5px #2b2626;
+  border-radius: 5px;
+  color: white;
+  background-color: #504f4f53; }

@@ -2,12 +2,46 @@
 @import "./utilities/mixin";
 @import "./utilities/variables";
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container{
     @include container;
     @include bg-container;
+    display: flex;
 }
 
 #section-uno{
     background-color: #abc;
-    background-image: url("../");
+    background-image: url("../media/img/section-uno/bg-section1.jpg");
+}
+#section-dos{
+    background-color: #abc;
+    background-image: url("../media/img/section-dos/bg-section2.jpg");
+}
+#section-tres{
+    background-color: #abc;
+    background-image: url("../media/img/section-tres/bg-section3.jpg");
+
+}
+#section-cuatro{
+    background-color: rgb(34, 34, 17);
+
+}
+#section-cinco{
+    background-color: rgb(170, 187, 204);
+
+}
+#section-seis{
+    background-color: #332;
+
+}
+
+.btn-pagina{
+    @include grid-btn-pagina;
+}
+.btn-pagina-item{
+    @include btn-pagina-item;
 }

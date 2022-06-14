@@ -8,3 +8,43 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin btn-pagina-item{
+    display: relative;
+    top: 10px;
+    right: 10px;
+    left: 0;
+    bottom:0;
+
+    margin:2px ;
+    padding:3px;
+    width:100px;
+
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 1px 2px 5px #2b2626;
+    border-radius: 5px;
+    color: white;
+    background-color: #504f4f53;
+}
+// HOVER PARA @MEDIAQUERY
+//     }&:hover{
+//         background-color: #504f4fa4;
+//         transform: scale(1.05);
+//         transition-duration: 0.5s;
+//         }
+// }
+
+@mixin grid-container-center{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+@mixin grid-btn-pagina{
+    display: grid;
+    justify-content: start;
+    align-content: end;
+    text-align: center;
+}
