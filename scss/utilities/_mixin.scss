@@ -39,8 +39,6 @@
     justify-items: center;
     align-content: center ;
     align-items: center;
-
-
 }
 @mixin btn-pagina-item{
     display: relative;
@@ -49,8 +47,8 @@
     left: 0;
     bottom: 1rem;
 
-    margin:2px ;
-    padding:3px;
+    margin: 5px;
+    padding:0 10px 5px 10px;
 
     font-weight: bold;
     text-decoration: none;
