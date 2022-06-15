@@ -28,10 +28,11 @@
 
 .btn-pagina {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: start; }
   .btn-pagina .btn-pagina-item {
     margin: 10px;
     padding: 0 10px 5px 10px;

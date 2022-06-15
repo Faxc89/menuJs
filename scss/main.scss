@@ -30,6 +30,7 @@
 // BOTÓNES DE NAVEGACIÓN
 .btn-pagina{
     width: 100%;
+    height: auto;
     @include flex-btn-pagina;
     .btn-pagina-item{
         @include btn-pagina-item;
