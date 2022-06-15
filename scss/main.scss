@@ -8,116 +8,110 @@
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+    color: white;
+    text-align: center
 }
+// // // // // CONTENEDORES // // // // // // //
 .container{
     @include container;
     @include bg-container;
-    display: flex;
 }
+// // // // // // // // // // // // // // 
 
-
-
-#section-uno{
-    background-color: #abc;
-    background-image: url("../media/img/section-tres/bg-section3.jpg");
-    @include grid-container-center;
-}
-#section-uno:before{
-@include section-uno-before;
-}
-
-
-
-#section-dos{
-    background-color: #abc;
-    background-image: url("../media/img/section-dos/bg-section2.jpg");
-    display: grid;
-    grid-column: 5vw 95vw;
-    grid-template-areas:
-    "btn titulo"
-    "btn cards"
-    "btn cards";
-    h1{
-        color: white;
-        font-size: 1.8rem;
-        font-family: 'Kanit', sans-serif;
-
-        grid-area: titulo;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-    }
-    .card-opciones-menu{
-        grid-area: cards;
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-        align-content: space-around;
-        color: white;
-        font-size: 1.3rem;
-        font-family: 'Kanit', sans-serif;
-        text-align: center;
-        .card{
-            border-top-left-radius: 5px;
-            background-color: rgba(54, 54, 48, 0.445);
-        }
-        h2{
-            font-size: 1.2em;
-        }
-    }
-    .btn-pagina{
-        grid-area: btn;
-        display: grid;
-        justify-content: start;
-        align-content: ceter;
-        justify-items: center;
-        align-items: center;
-    }
-
-}
-
-
-#section-tres{
-    background-color: #abc;
-    background-image: url("../media/img/section-uno/bg-section1.jpg");
-
-}
-
-
-#section-cuatro{
-    background-color: rgb(34, 34, 17);
-    background-image: url("../media/img/section-cuatro/bg-section4.png");
-
-}
-
-
-#section-cinco{
-    background-color: rgb(170, 187, 204);
-
-}
-
-
-#section-seis{
-    background-color: #332;
-
-}
-
-
-
-.btn-pagina{
-    @include grid-btn-pagina;
-}
-.btn-pagina-item{
-    @include btn-pagina-item;
-}
+// // // // // BOTONES // // // // // // //
+// BOTÓN MENU
 .btn-menu{
     @include btn-menu;
 }
 .btn-menu-item{
     @include btn-menu-item;
 }
-
-.icon{
-    color: white;
-    font-size: 1.5rem;
+// -------------------------------------
+// BOTÓNES DE NAVEGACIÓN
+.btn-pagina{
+    width: 100%;
+    @include flex-btn-pagina;
+    .btn-pagina-item{
+        @include btn-pagina-item;
+        .icon{
+            font-size: 1.5rem;
+        }
+    }
 }
+// -------------------------------------
+// // // // // // // // // // // // // // 
+
+
+// // // // // SECTIONS // // // // // // //
+
+// SECTION UNO
+#section-uno{
+    background-color: #abc;
+    background-image: url("../media/img/section-tres/bg-section3.jpg");
+    // @include grid-container-center;
+    @include flex-section-uno;
+    &::before{
+        @include before-section-uno
+    }
+}
+// -------------------------------------
+// SECTION DOS
+#section-dos{
+    background-color: #abc;
+    background-image: url("../media/img/section-dos/bg-section2.jpg");
+    h1{
+        height: 10vh;
+        font-size: 1.8rem;
+        font-family: 'Kanit', sans-serif;
+        @include flex-h1;
+    }
+    .card-opciones-menu{
+        height: 80vh;
+        font-size: 1.3rem;
+        font-family: 'Kanit', sans-serif;
+        @include flex-cards-opciones-menu;
+        .card{
+            border-radius: 5px;
+            background-color: rgba(157, 148, 143, 0.16);
+            height: 50%; 
+            height: 240px;
+            width: 250px;
+        }
+        h2{
+            font-size: 1.2em;
+        }
+    }
+}
+// -------------------------------------
+// SECTION TRES
+#section-tres{
+    background-color: #abc;
+    background-image: url("../media/img/section-uno/bg-section1.jpg");
+    @include flex-section;
+
+
+}
+// -------------------------------------
+// SECTION CUATRO
+#section-cuatro{
+    background-color: rgb(34, 34, 17);
+    background-image: url("../media/img/section-cuatro/bg-section4.png");
+    @include flex-section;
+}
+// -------------------------------------
+// SECTION CINCO
+#section-cinco{
+    background-color: rgb(170, 187, 204);
+    @include flex-section;
+
+}
+// -------------------------------------
+// SECTION SEIS
+#section-seis{
+    background-color: #332;
+    @include flex-section;
+
+}
+
+// -------------------------------------
+// // // // // // // // // // // // // //

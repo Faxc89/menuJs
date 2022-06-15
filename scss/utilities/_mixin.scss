@@ -1,53 +1,34 @@
-// Creo MIXIN 
+// // // // MIXINS / // // // // // // 
 
-@mixin grid-container-center{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
+// // // // // CONTENEDORES // // // // // // //
 @mixin container{
     height: 100vh;
+    width: 100vw;
 }
 @mixin bg-container{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+// // // // // // // // // // // // // // 
 
-
+// // // // // BOTONES // // // // // // //
 @mixin btn-menu{
-    border: 0;
-    padding: 3px;
-    position: relative;
-    background-color:#bcb6b354;
-    
+    background-color:#bcb6b3;
+    border-radius: 5px;
+    position: absolute;
+}
+// -------------------------------------
+@mixin btn-menu-item{
+    text-decoration: none;
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
     text-shadow: 10px 10px 10px #52382c;
-    border-radius: 5px;
-}
-@mixin btn-menu-item{
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-}
-
-@mixin grid-btn-pagina{
-    display: grid;
-    justify-content: start;
-    justify-items: center;
-    align-content: center ;
-    align-items: center;
 }
 @mixin btn-pagina-item{
-    display: relative;
-    top: 0;
-    right: 1rem;
-    left: 0;
-    bottom: 1rem;
-
-    margin: 5px;
+    margin: 10px;
     padding:0 10px 5px 10px;
 
     font-weight: bold;
@@ -61,17 +42,42 @@
     line-height: 2.5rem;
 
 }
-// HOVER PARA @MEDIAQUERY
-//     }&:hover{
-//         background-color: #504f4fa4;
-//         transform: scale(1.05);
-//         transition-duration: 0.5s;
-//         }
-// }
+// -------------------------------------
 
+// // // // // FLEXS // // // // // // //
+@mixin flex-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+@mixin flex-section-uno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-btn-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+@mixin flex-cards-opciones-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+// // // // // // // // // // // // // // 
 
-@mixin section-uno-before{
+// // // PSEUDO CLASE ::  BEFORE  // // //
+@mixin before-section-uno{
     content: '';
     position: absolute;
     background-color: rgba(0,0,0,0.3);
@@ -81,5 +87,18 @@
     bottom: 0;
     right: 0;
 }
+// // // // // // // // // // // // // // 
+
+
+//  HOVER PARA @MEDIAQUERY
+//      }&:hover{
+//          background-color: #504f4fa4;
+//          transform: scale(1.05);
+//          transition-duration: 0.5s;
+//          }
+//  }
+
+
+
 
 
