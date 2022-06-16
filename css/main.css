@@ -14,7 +14,7 @@
   background-repeat: no-repeat; }
 
 .btn-menu {
-  background-color: #bcb6b3;
+  background-color: #504f4f53;
   border-radius: 5px;
   position: absolute; }
 
@@ -24,7 +24,8 @@
   font-size: 1.8rem;
   font-weight: bold;
   font-family: 'Kanit', sans-serif;
-  text-shadow: 10px 10px 10px #52382c; }
+  text-shadow: 1px 2px 5px #2b2626;
+  padding: 0.8rem; }
 
 .btn-pagina {
   width: 100%;
@@ -50,7 +51,6 @@
 
 #section-uno {
   background-color: #abc;
-  background-image: url("../media/img/section-tres/bg-section3.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,8 +65,7 @@
     right: 0; }
 
 #section-dos {
-  background-color: #abc;
-  background-image: url("../media/img/section-dos/bg-section2.jpg"); }
+  background-color: #abc; }
   #section-dos h1 {
     height: 10vh;
     font-size: 1.8rem;
@@ -93,14 +92,12 @@
 
 #section-tres {
   background-color: #abc;
-  background-image: url("../media/img/section-uno/bg-section1.jpg");
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
 
 #section-cuatro {
   background-color: #222211;
-  background-image: url("../media/img/section-cuatro/bg-section4.png");
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }

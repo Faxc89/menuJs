@@ -14,7 +14,7 @@
 
 // // // // // BOTONES // // // // // // //
 @mixin btn-menu{
-    background-color:#bcb6b3;
+    background-color: #504f4f53;    
     border-radius: 5px;
     position: absolute;
 }
@@ -25,7 +25,8 @@
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
-    text-shadow: 10px 10px 10px #52382c;
+    text-shadow: 1px 2px 5px #2b2626;
+    padding: 0.8rem;
 }
 @mixin btn-pagina-item{
     margin: 10px;
