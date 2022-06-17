@@ -47,7 +47,7 @@
 
 // SECTION UNO
 #section-uno{
-    background-color: #abc;
+    background-color: #8ba5b0;
     // @include grid-container-center;
     @include flex-section-uno;
     &::before{
@@ -57,10 +57,9 @@
 // -------------------------------------
 // SECTION DOS
 #section-dos{
-    background-color: #abc;
+    background-color: #708e91;
     h1{
-        height: 10vh;
-        font-size: 1.8rem;
+        margin-top: 1rem;
         font-family: 'Kanit', sans-serif;
         @include flex-h1;
     }
@@ -84,7 +83,7 @@
 // -------------------------------------
 // SECTION TRES
 #section-tres{
-    background-color: #abc;
+    background-color: #5c7772;
     @include flex-section;
 
 
@@ -92,20 +91,20 @@
 // -------------------------------------
 // SECTION CUATRO
 #section-cuatro{
-    background-color: rgb(34, 34, 17);
+    background-color: #4c6054;
     @include flex-section;
 }
 // -------------------------------------
 // SECTION CINCO
 #section-cinco{
-    background-color: rgb(170, 187, 204);
+    background-color: #3f4939;
     @include flex-section;
 
 }
 // -------------------------------------
 // SECTION SEIS
 #section-seis{
-    background-color: #332;
+    background-color: #333322;
     @include flex-section;
 
 }

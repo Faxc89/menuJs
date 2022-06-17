@@ -50,7 +50,7 @@
       font-size: 1.5rem; }
 
 #section-uno {
-  background-color: #abc;
+  background-color: #8ba5b0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,10 +65,9 @@
     right: 0; }
 
 #section-dos {
-  background-color: #abc; }
+  background-color: #708e91; }
   #section-dos h1 {
-    height: 10vh;
-    font-size: 1.8rem;
+    margin-top: 1rem;
     font-family: 'Kanit', sans-serif;
     display: flex;
     justify-content: center;
@@ -91,25 +90,25 @@
       font-size: 1.2em; }
 
 #section-tres {
-  background-color: #abc;
+  background-color: #5c7772;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
 
 #section-cuatro {
-  background-color: #222211;
+  background-color: #4c6054;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
 
 #section-cinco {
-  background-color: #aabbcc;
+  background-color: #3f4939;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
 
 #section-seis {
-  background-color: #332;
+  background-color: #333322;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
